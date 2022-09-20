@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar .container-fluid {
+    width: 70%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-brand {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--text-primary);
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    text-transform: capitalize;
+    font-size: .9rem;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.main-user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    border-left: 1px solid lightgray;
+}
+
+.main-user-info  button {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    .main-user-info {
+        justify-content: flex-start;
+        margin-left: 0px;
+        padding-left: 0px;
+        border-left: none;
+    }
+
+    .navbar .container-fluid {
+        width: 90%;
+    }
+}

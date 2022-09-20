@@ -1,0 +1,119 @@
+.home-container {
+    background: url('../../assets/wave-haikei\ \(4\).svg') bottom no-repeat;
+    background-position-y: -10%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-page-content {
+    color: var(--text-primary)
+}
+
+.home-page-content h3 {
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.home-page-content h3 b {
+    font-weight: bold;
+}
+
+.home-page-content p {
+    width: 85%;
+    font-size: .9em;
+}
+
+.home-page-content button {
+    background-color: var(--theme-primary);
+    color: white;
+    border-radius: 15px;
+    font-size: .9em;
+    padding: .5rem 1rem;
+}
+
+.car-wash-services {
+    min-height: 100vh;
+    padding: 12rem 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url('../../assets/blob-scene-haikei.svg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.car-wash-header h1, .pricing-package-header h1, .client-reviews-header h1 {
+    width: 45%;
+    font-weight: bold;
+}
+
+.car-wash-services-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.pricing-packages {
+    min-height: 100vh;
+    padding: 10rem 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    background-color: #F8F9F9;
+}
+
+.pricing-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.clients-reviews {
+    min-height: 90vh;
+    padding: 10rem 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #F2F3F4;
+    background: url('../../assets/blob-scene-haikei\ \(1\).svg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.client-reviews-header {
+    margin-bottom: 100px;
+}
+
+.clients-reviews-list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.get-started-link {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 992px) {
+    .home-container {
+        background: none;
+    }
+    
+    .car-wash-services-list {
+        justify-content: center;
+    }
+
+    .section-title { width: 100% !important; }
+}

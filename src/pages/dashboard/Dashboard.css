@@ -1,0 +1,37 @@
+.dashboard-user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    color: var(--text-color);
+    background: var(--sidebar-color);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.dashboard-user-menu h4 {
+    text-transform: capitalize;
+}
+
+.dashboard-user-menu h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .home {
+        padding: 2rem;
+    }
+
+    .dashboard-user-menu {
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .dashboard-user-menu h4 {
+        font-size: 1.2em;
+    }
+}

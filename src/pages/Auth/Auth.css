@@ -1,0 +1,38 @@
+.auth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../../assets/wave-haikei\ \(3\).svg') bottom no-repeat;
+    background-size: cover;
+}
+
+.auth-form {
+    width: 45rem;
+}
+
+.auth-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.auth-page-header h1 {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.col-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+    .col-bg, .auth-page-header h1 {
+        display: none;
+    }
+}

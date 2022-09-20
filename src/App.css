@@ -1,38 +1,106 @@
+:root {
+    --text-primary: #0066ff;
+    --theme-primary: #0066ff;
+    --theme-secondary: #fe9d1b;
+
+     /* ===== Colors ===== */
+     --body-color: #F4F6F7;
+     --sidebar-color: #FFF;
+     --primary-color: #0066ff;
+     --primary-color-light: #F6F5FF;
+     --toggle-color: #DDD;
+     --text-color: #707070;
+ 
+     /* ====== Transition ====== */
+     --tran-03: all 0.2s ease;
+     --tran-03: all 0.3s ease;
+     --tran-04: all 0.3s ease;
+     --tran-05: all 0.3s ease;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+body.dark{
+    --body-color: #18191a;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color: #ccc;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    padding: 2.5rem 4rem;
+    background-color: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.sidebar.close ~ .home{
+    left: 88px;
+    height: 100vh;
+    width: calc(100% - 88px);
+}
+body.dark .home .text{
+    color: var(--text-color);
+}
+
+.bottom-content li {
+    background-color: var(--primary-color-light);
+    border-radius: 6px; 
+    transition: .5s;
+}
+
+.bottom-content li:hover {
+    cursor: pointer;
+    opacity: .7;
+    transition-duration: .5s;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 .App {
-  text-align: center;
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gifts-list-box::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gifts-list-box::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gifts-list-box::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: lightgray;
 }

@@ -1,0 +1,48 @@
+.gift-item {
+    min-width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    background-color: var(--sidebar-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.gift-item i {
+    font-size: 2rem;
+}
+
+.gift-item button {
+    background-color: #fd6806;
+    border: none;
+    transition: .5s;
+    color: white;
+}
+
+.gift-item button:hover {
+    background-color: #fd6806 !important;
+    opacity: .8;
+    transition-duration: .5s;
+}
+
+.gifts-list-box::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.gifts-list-box::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.gifts-list-box::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: lightgray;
+}

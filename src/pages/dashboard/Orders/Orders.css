@@ -1,0 +1,27 @@
+.user-orders {
+    margin-top: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color);
+}
+
+.user-points-container {
+    width: 20rem;
+    padding: 1.5rem;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--theme-primary);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.user-points-container h3 {
+    color: white;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}

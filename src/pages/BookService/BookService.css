@@ -1,0 +1,55 @@
+.book-service {
+    position: relative;
+    min-height: 100vh;
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('../../assets/wave-haikei\ \(2\).svg') no-repeat;
+    background-size: cover;
+}
+
+.book-service-desc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.book-service-header h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    color: var(--text-primary);
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.service-item {
+    max-width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .5s;
+}
+
+.service-item:hover {
+    transform: scale(.95);
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.selected-service {
+    outline: 1px solid var(--theme-primary);
+}
+
+.back-button-wrapper {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}

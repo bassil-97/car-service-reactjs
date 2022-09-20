@@ -1,0 +1,49 @@
+.form-control-local-local {
+    margin: 1rem 0;
+    padding: .75rem 0.5rem;
+    background: none;
+    color: var(--text-color);
+  }
+  
+  .form-control-local label,
+  .form-control-local input,
+  .form-control-local textarea {
+    display: block;
+  }
+  
+  .form-control-local label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control-local input,
+  .form-control-local textarea {
+    width: 100%;
+    font: inherit;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    padding: .5rem;
+    border-radius: 4px;
+  }
+  
+  .form-control-local input:focus,
+  .form-control-local textarea:focus {
+    outline: none;
+    background: #ebebeb;
+    border-color: #510077;
+  }
+  
+  .form-control-local--invalid label,
+  .form-control-local--invalid p {
+    color: red;
+  }
+  
+  .form-control-local--invalid input,
+  .form-control-local--invalid textarea {
+    border-color: red;
+    background: #ffd1d1;
+  }
+  
+  .no-border {
+    border: none !important;
+  }
